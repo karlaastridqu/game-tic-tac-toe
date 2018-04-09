@@ -1,1 +1,1 @@
-# game-three-row
+# game-tic-tac-toe
