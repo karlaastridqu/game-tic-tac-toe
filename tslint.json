@@ -30,7 +30,7 @@
     "label-position": true,
     "max-line-length": [
       true,
-      140
+      120
     ],
     "member-access": false,
     "member-ordering": [
@@ -121,7 +121,7 @@
       true,
       "attribute",
       "app",
-      "camelCase"
+      "kebab-case"
     ],
     "component-selector": [
       true,
