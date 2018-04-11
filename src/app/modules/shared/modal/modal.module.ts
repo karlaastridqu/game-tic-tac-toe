@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ChipComponent } from './components/chip.component';
+import { ModalComponent } from './components/modal.component';
 
 @NgModule({
+    declarations: [
+        ModalComponent
+    ],
     imports: [
         CommonModule
     ],
     exports: [
-        ChipComponent
-    ],
-    declarations: [
-        ChipComponent
+        ModalComponent
     ]
 })
-export class ChipModule {}
+export class ModalModule {}
