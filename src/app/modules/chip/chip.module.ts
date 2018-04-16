@@ -4,14 +4,14 @@ import { CommonModule } from '@angular/common';
 import { ChipComponent } from './components/chip.component';
 
 @NgModule({
-    imports: [
-        CommonModule
-    ],
-    exports: [
-        ChipComponent
-    ],
-    declarations: [
-        ChipComponent
-    ]
+  imports: [
+    CommonModule
+  ],
+  declarations: [
+    ChipComponent
+  ],
+  exports: [
+    ChipComponent
+  ]
 })
 export class ChipModule {}

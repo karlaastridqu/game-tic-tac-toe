@@ -3,6 +3,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { ChipModule } from './modules/chip/chip.module';
 import { ModalModule } from './modules/shared/modal/modal.module';
 import { HelloWorldModule } from './elements/hello-world/hello-world.module';
 
@@ -14,7 +15,8 @@ import { HelloWorldModule } from './elements/hello-world/hello-world.module';
         NgbModule.forRoot(),
         ModalModule,
         HelloWorldModule,
-        BrowserModule
+        BrowserModule,
+        ChipModule
     ],
     providers: [],
     bootstrap: [
