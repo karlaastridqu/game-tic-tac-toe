@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 import { HelloWorldComponent } from './components/hello-world.component';
 
 @NgModule({
-  declarations: [
-    HelloWorldComponent
-  ],
-  exports: [
-    HelloWorldComponent
-  ]
+    exports: [
+        HelloWorldComponent
+    ],
+    entryComponents: [
+        HelloWorldComponent
+    ],
+    declarations: [
+        HelloWorldComponent
+    ]
 })
-export class HelloWorldModule { }
+export class HelloWorldModule {}
