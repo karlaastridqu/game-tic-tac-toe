@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class BoardService {
+export class ModalService {
 
-  constructor() {}
+  constructor() { }
 
 }
