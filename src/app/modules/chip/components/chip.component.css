@@ -1,0 +1,24 @@
+.init-chip {
+  height: 50px;
+  width: 50px;
+  background-color: #F8ECE0;
+  color: black;
+  position: relative;
+  margin: auto auto;
+  font-size: 100%;
+  font: inherit;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial,sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+.cell {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cell span {
+  /*content: 'x';*/
+  vertical-align: middle;
+}
