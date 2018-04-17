@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ModalComponent } from './components/modal.component';
 
@@ -8,7 +10,9 @@ import { ModalComponent } from './components/modal.component';
         ModalComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        NgbModule,
+        FormsModule
     ],
     exports: [
         ModalComponent
