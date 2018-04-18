@@ -6,12 +6,14 @@
     <ngb-alert type="success" *ngIf="winner" [dismissible]="false">
         <strong>Winner:</strong> {{winner}}
     </ngb-alert>
+  <div class="grid">
 
-    <table>
-        <tr *ngFor="let row of getMatrix(), let i = index">
-            <td *ngFor="let col of row, let j = index" (click)="setCell(i, j)">
-                <app-chip [state]="col + ' [' + i + ',' + j + ']'"></app-chip>
-            </td>
-        </tr>
-    </table>
+    <div *ngFor="let row of getMatrix(), let i = index">
+      <div *ngFor="let col of row, let j = index" (click)="setCell(i, j)">
+        <p>
+          <app-chip [state]="col"></app-chip>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>

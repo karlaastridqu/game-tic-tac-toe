@@ -1,14 +1,21 @@
-table {
-    border-collapse: collapse;
-    width: 100%;
-    cursor: pointer;
+.grid
+{
+    display: table;
+    margin: 0 auto;
+    border: .4em solid #000;
 }
-
-th, td {
-    border: 1px solid black;
+.grid > div > div
+{
+    display: table-cell;
+    border: .2em solid #000;
 }
-
-td {
-    width: 50px;
-    height: 50px;
+.grid > div > div > p
+{
+    font-size: 4rem;
+    width: 1.3em;
+    height: 1.3em;
+    line-height: 1.3em;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
 }
