@@ -39,15 +39,18 @@ export class BoardComponent implements OnChanges {
     }
 
     public setCell(i, j) {
-        const playerChip = this.playerChipTypes[this.service.getTurn()];
-        this.service.setCell(i, j, playerChip);
-        this.winner = this.getWinner();
+        if(!this.winner) {
+            const playerChip = this.playerChipTypes[this.service.getTurn()];
 
-        if (this.winner) {
-            // TODO: forward message to feedback component: Player X won!
-            console.log('NEW WINNER: ', this.winner);
-        } else {
-            this.changeTurn();
+            this.service.setCell(i, j, playerChip);
+            this.winner = this.getWinner();
+
+            if (this.winner) {
+                // TODO: forward message to feedback component: Player X won!
+                console.log('NEW WINNER: ', this.winner);
+            } else {
+                this.changeTurn();
+            }
         }
     }
 
