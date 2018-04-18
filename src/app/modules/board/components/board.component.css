@@ -1,0 +1,21 @@
+.grid
+{
+    display: table;
+    margin: 0 auto;
+    border: .4em solid #000;
+}
+.grid > div > div
+{
+    display: table-cell;
+    border: .2em solid #000;
+}
+.grid > div > div > p
+{
+    font-size: 4rem;
+    width: 1.3em;
+    height: 1.3em;
+    line-height: 1.3em;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
