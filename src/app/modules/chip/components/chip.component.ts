@@ -17,7 +17,9 @@ export class ChipComponent implements OnInit {
 
     @HostListener('click')
     clickHandler() {
-        console.log('emitting click from chip!');
-        this.click.emit('chip clicked!');
+        if(!this.state) {
+            console.log('emitting click from chip!');
+            this.click.emit('chip clicked!');
+        }
     }
 }

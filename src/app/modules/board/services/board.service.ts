@@ -27,6 +27,10 @@ export class BoardService {
         this._matrix[i][j] = playerChip;
     }
 
+    public isValidChipState(i, j, playerChip: string) {
+        return this._matrix[i][j] == "-";
+    }
+
     public getWinner() {
         console.log('Checking rows');
         let playerWins = this.matrixService.checkRows(this._matrix, this.boardConfig.chipsNumber, INITIAL_STATE);

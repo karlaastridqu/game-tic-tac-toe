@@ -39,9 +39,8 @@ export class BoardComponent implements OnChanges {
     }
 
     public setCell(i, j) {
-        if(!this.winner) {
+        if(!this.winner && this.service.isValidChipState(i,j,this.playerChipTypes[this.service.getTurn()]) {
             const playerChip = this.playerChipTypes[this.service.getTurn()];
-
             this.service.setCell(i, j, playerChip);
             this.winner = this.getWinner();
 
