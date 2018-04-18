@@ -1,0 +1,24 @@
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title">Setup game</h4>
+    </div>
+    <div class="modal-body">
+        <div [hidden]="players.length >= 2">
+            <p>Give the player name:</p>
+            <div>
+                <input type="text" [(ngModel)]="playerName" placeholder="Add a player name..."/>
+            </div>
+            <button [hidden]="players.length >= 1" (click)="addPlayer(playerName);">+ Add second player</button>
+            <button [hidden]="players.length <= 0 || playerName === ''" (click)="addPlayer(playerName);">Done</button>
+        </div>
+        <div [hidden]="players.length !== 2">
+            <div>
+                Rows: <input type="text" [(ngModel)]="rowsNumber">
+            </div>
+            <div>
+                Chips to win: <input type="text" [(ngModel)]="chipsNumber">
+            </div>
+            <button [hidden]="chipsNumber > rowsNumber || rowsNumber < 3" (click)="close()">Start game</button>
+        </div>
+    </div>
+</ng-template>
