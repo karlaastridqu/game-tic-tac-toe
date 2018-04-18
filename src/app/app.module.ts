@@ -15,6 +15,7 @@ import { HelloWorldModule } from './elements/hello-world/hello-world.module';
         NgbModule.forRoot(),
         ModalModule,
         HelloWorldModule,
+        ModalModule,
         BrowserModule,
         ChipModule
     ],
