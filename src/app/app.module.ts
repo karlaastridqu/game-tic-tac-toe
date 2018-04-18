@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ChipModule } from './modules/chip/chip.module';
 import { ModalModule } from './modules/shared/modal/modal.module';
 import { HelloWorldModule } from './elements/hello-world/hello-world.module';
+import { BoardModule } from './modules/board/board.module';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { HelloWorldModule } from './elements/hello-world/hello-world.module';
         HelloWorldModule,
         ModalModule,
         BrowserModule,
+        BoardModule,
         ChipModule
     ],
     providers: [],

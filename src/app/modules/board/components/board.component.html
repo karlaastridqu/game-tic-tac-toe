@@ -1,3 +1,17 @@
-<p>
-  board works!
-</p>
+<div *ngIf="players">
+    <ngb-alert [dismissible]="false">
+        <strong>Chips to win:</strong> {{chipsNumber}}
+        <strong>Current turn:</strong> {{players[turnIdx]}}
+    </ngb-alert>
+    <ngb-alert type="success" *ngIf="winner" [dismissible]="false">
+        <strong>Winner:</strong> {{winner}}
+    </ngb-alert>
+
+    <table>
+        <tr *ngFor="let row of getMatrix(), let i = index">
+            <td *ngFor="let col of row, let j = index" (click)="setCell(i, j)">
+                <app-chip [state]="col + ' [' + i + ',' + j + ']'"></app-chip>
+            </td>
+        </tr>
+    </table>
+</div>
